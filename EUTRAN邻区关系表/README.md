@@ -1,0 +1,9 @@
+# EUTRAN邻区关系表[小区基本信息](../小区基本信息/README.md) <br>[EUTRAN邻区关系表](#) <br>### 模型描述EUTRAN异系统邻区参数，用于异系统切换### 创建或删除实例时的生效方式动态生效### 模型关联- 父类： <br>[小区基本信息](../小区基本信息/README.md) <br>- 对象间关联：    - "EUTRAN邻区关系表"对应的"EUTRAN邻区"必须先配置### 模型属性本模型相关的参数如<a href="#t2">表2</a>所示。表2 模型参数列表<table id = "t2"><thread><tr><th align = "left">模型参数</th><th align = "left">参数含义</th></tr></thread><tbody><tr><td id = "NR小区标识-1"><a href = "NR小区标识-1.html">NR小区标识</a></td><td>该参数表示NR小区的标识，在本基站范围内唯一标识一个小区。</td></tr><tr><td id = "移动国家码-2"><a href = "移动国家码-2.html">移动国家码</a></td><td>该参数表示E-UTRAN邻区所归属的移动国家码。
+PLMN由MCC和MNC组成。
+MCC由3位数字组成。
+MNC由2~3位数字组成。
+例如：MCC="123"，MNC="45"，PLMN="12345"。</td></tr><tr><td id = "移动网络码-3"><a href = "移动网络码-3.html">移动网络码</a></td><td>该参数表示E-UTRAN邻区所归属的移动网络码。
+PLMN由MCC和MNC组成。
+MCC由3位数字组成。
+MNC由2~3位数字组成。
+例如：MCC="123"，MNC="45"，PLMN="12345"。</td></tr><tr><td id = "eNodeB标识-4"><a href = "eNodeB标识-4.html">eNodeB标识</a></td><td>该参数表示E-UTRAN异系统邻区的同一PLMN网络下的基站唯一标识。小区标识和基站标识组成28位的E-UTRAN小区标识，基站标识为E-UTRAN小区标识的左20位，E-UTRAN小区标识和PLMN组成E-UTRAN CGI。参数的使用细节参见3GPP TS 36.413。</td></tr><tr><td id = "小区标识-5"><a href = "小区标识-5.html">小区标识</a></td><td>该参数表示E-UTRAN异系统邻区的同一基站内的小区唯一标识。小区标识和基站标识组成28位的E-UTRAN小区标识，小区标识为E-UTRAN小区标识的右8位，E-UTRAN小区标识和PLMN组成E-UTRAN CGI。参数的使用细节参见3GPP TS 36.413。</td></tr><tr><td id = "E-UTRAN小区偏移量-6"><a href = "E-UTRAN小区偏移量-6.html">E-UTRAN小区偏移量</a></td><td>该参数表示本地小区与E-UTRAN邻区之间的小区偏移量，用于控制B1和B2测量事件发生的难易，该值越大越容易触发测量报告上报。</td></tr><tr><td id = "E-UTRAN小区重选偏置-7"><a href = "E-UTRAN小区重选偏置-7.html">E-UTRAN小区重选偏置</a></td><td>该参数表示本地小区与E-UTRAN邻区之间的重选偏置，用于控制NR到LTE的小区重选难易程度。</td></tr></tbody></table>

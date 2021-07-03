@@ -1,0 +1,9 @@
+# EUTRAN邻区[GNB功能](../GNB功能/README.md) <br>[EUTRAN邻区](#) <br>### 模型描述EUTRAN外部邻区是本基站相邻的EUTRAN小区公共参数信息，用于本基站一个或多个服务小区增加EUTRAN邻区关系### 创建或删除实例时的生效方式动态生效### 模型关联- 父类： <br>[GNB功能](../GNB功能/README.md) <br>- 对象间关联：    - "EUTRAN邻区"的"DlEarfcn"必须在"EUTRAN频点"中有配置### 模型属性本模型相关的参数如<a href="#t2">表2</a>所示。表2 模型参数列表<table id = "t2"><thread><tr><th align = "left">模型参数</th><th align = "left">参数含义</th></tr></thread><tbody><tr><td id = "移动国家码-1"><a href = "移动国家码-1.html">移动国家码</a></td><td>该参数表示E-UTRAN邻区所归属的移动国家码。
+PLMN由MCC和MNC组成。
+MCC由3位数字组成。
+MNC由2~3位数字组成。
+例如：MCC="123"，MNC="45"，PLMN="12345"。</td></tr><tr><td id = "移动网络码-2"><a href = "移动网络码-2.html">移动网络码</a></td><td>该参数表示E-UTRAN邻区所归属的移动网络码。
+PLMN由MCC和MNC组成。
+MCC由3位数字组成。
+MNC由2~3位数字组成。
+例如：MCC="123"，MNC="45"，PLMN="12345"。</td></tr><tr><td id = "基站标识-3"><a href = "基站标识-3.html">基站标识</a></td><td>该参数表示E-UTRAN异系统邻区的同一PLMN网络下的基站唯一标识。小区标识和基站标识组成28位的E-UTRAN小区标识，基站标识为E-UTRAN小区标识的左20位，E-UTRAN小区标识和PLMN组成E-UTRAN CGI。参数的使用细节参见3GPP TS 36.413。</td></tr><tr><td id = "小区标识-4"><a href = "小区标识-4.html">小区标识</a></td><td>该参数表示E-UTRAN异系统邻区的同一基站内的小区唯一标识。小区标识和基站标识组成28位的E-UTRAN小区标识，小区标识为E-UTRAN小区标识的右8位，E-UTRAN小区标识和PLMN组成E-UTRAN CGI。参数的使用细节参见3GPP TS 36.413。</td></tr><tr><td id = "下行E-UTRAN频点-5"><a href = "下行E-UTRAN频点-5.html">下行E-UTRAN频点</a></td><td>该参数表示异系统E-UTRAN外部小区的下行频点。参数的使用细节参见3GPP TS 36.104。</td></tr><tr><td id = "物理小区标识-6"><a href = "物理小区标识-6.html">物理小区标识</a></td><td>该参数表示E-UTRAN外部小区的物理小区标识，参数的使用细节参见3GPP TS 36.331。</td></tr><tr><td id = "跟踪区域码-7"><a href = "跟踪区域码-7.html">跟踪区域码</a></td><td>该参数表示E-UTRAN外部小区的跟踪区域码。由于TAC值0x0000(0)和0xFFFE(65534)协议中规定作为预留使用，这两个值将在未来的版本内禁止配置。应在规划和配置时，避免使用0或65534作为TAC值。</td></tr><tr><td id = "小区名称-8"><a href = "小区名称-8.html">小区名称</a></td><td>该参数表示E-UTRAN异系统邻区的小区名称。</td></tr></tbody></table>

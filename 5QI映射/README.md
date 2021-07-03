@@ -1,0 +1,7 @@
+# 5QI映射[GNB功能](../GNB功能/README.md) <br>[5QI映射](#) <br>### 模型描述5QI相关的参数配置，可对不同QOS属性的QOS Flow配置不同的参数### 创建或删除实例时的生效方式动态生效### 模型关联- 父类： <br>[GNB功能](../GNB功能/README.md) <br>- 对象间关联：    - 系统默认创建的"Nr5qi"为1~9，65，66，69，70，75，79对应的"Qci"值必须一直存在，不允许修改### 模型属性本模型相关的参数如<a href="#t2">表2</a>所示。表2 模型参数列表<table id = "t2"><thread><tr><th align = "left">模型参数</th><th align = "left">参数含义</th></tr></thread><tbody><tr><td id = "NR 5G服务质量等级指示-1"><a href = "NR 5G服务质量等级指示-1.html">NR 5G服务质量等级指示</a></td><td>该参数表示5G QoS服务质量等指示。
+核心网新増了5QI时:
+1.若 MO GNB5 qiConfig未增力该Nr5qi的相应配置,则默认按照Nr5qi取值为9时对应的配置参数生效。
+2.若MO gNB5qiConfig増加ロ了该Nr5q相应的配置：
+需要确保Nr5qi使用的gNB5giConfig.Oci承载在NRCellQciBearer和 NRDUCellQciBearer中己配置,若无配置将默认使用NRCellQciBearer和 NRDUCellQciBearer中Qi取值为9时对应的参数配置
+。
+针对Non Dynamic 5QI(包括Pre-configured 5QI和Standardized 5QI)，且核心网上不携带参数 (Averaging Windowdur, Packetdelaybudget, Priorityleve)时，gNodeB需要对新増Nr5qi对应的gNB5qiConfig.Qci承载在 MO gNBQciBearere中进行置否则将使用gNBQciBearere中Qci取值为9时对应的参数配置。</td></tr><tr><td id = "服务质量等级-2"><a href = "服务质量等级-2.html">服务质量等级</a></td><td>该参数用于设置各5QI对应的无线承载的服务质量等级。</td></tr><tr><td id = "AS反射型QoS开关-3"><a href = "AS反射型QoS开关-3.html">AS反射型QoS开关</a></td><td>该参数用于控制AsReflectiveQos功能的打开和关闭。当开关打开时，终端可以通过监控每个DRB上传输数据包的QFI，获得QoS Flow与DRB的对应关系；当开关关闭时，该功能关闭。</td></tr></tbody></table>

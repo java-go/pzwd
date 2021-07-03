@@ -1,0 +1,5 @@
+# 流控制传输协议[流控制传输协议](#) <br>### 模型属性本模型相关的参数如<a href="#t2">表2</a>所示。表2 模型参数列表<table id = "t2"><thread><tr><th align = "left">模型参数</th><th align = "left">参数含义</th></tr></thread><tbody><tr><td id = "偶联标识-1"><a href = "偶联标识-1.html">偶联标识</a></td><td></td></tr><tr><td id = "源IP地址标识-2"><a href = "源IP地址标识-2.html">源IP地址标识</a></td><td>1、引用T_IPV4表中的u8IPID字段
+2、引用的T_IPV4表中的u8IPID对应的u8Type必须为0</td></tr><tr><td id = "目的IP地址-3"><a href = "目的IP地址-3.html">目的IP地址</a></td><td></td></tr><tr><td id = "备用目的IP地址-4"><a href = "备用目的IP地址-4.html">备用目的IP地址</a></td><td>1.如果非0则提示用户配置网管表中的备用网管服务器地址
+2.如果非0，目的ip 地址也必须非0
+3.u8LinkType为1时，该值为0且不可配置
+4.如果非0，与目的ip 地址配置不能相同</td></tr><tr><td id = "本地端口号-5"><a href = "本地端口号-5.html">本地端口号</a></td><td>当u8LinkType为1时，默认值为38422</td></tr><tr><td id = "目的端口号-6"><a href = "目的端口号-6.html">目的端口号</a></td><td>当u8LinkType为1时，默认值为38422</td></tr><tr><td id = "SCTP链路类型-7"><a href = "SCTP链路类型-7.html">SCTP链路类型</a></td><td></td></tr><tr><td id = "偶联状态-8"><a href = "偶联状态-8.html">偶联状态</a></td><td>当u8LinkType为0时，0-2有效，分别为主用正常，不正常，备用正常；当u8LinkType为1时,0-1有效，分别为正常，不正常。</td></tr></tbody></table>

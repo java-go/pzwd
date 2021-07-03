@@ -1,0 +1,3 @@
+# 基于5QI移动性配置[小区基本信息](../小区基本信息/README.md) <br>[基于5QI移动性配置](#) <br>### 模型描述基于5QI的系统内切换，对于某个5QI等级业务可以定向到特定频点### 创建或删除实例时的生效方式动态生效### 模型关联- 父类： <br>[小区基本信息](../小区基本信息/README.md) <br>- 对象间关联：    - "基于5QI移动性配置"的SsbArfcn必须在"NR频点"中有配置### 模型属性本模型相关的参数如<a href="#t2">表2</a>所示。表2 模型参数列表<table id = "t2"><thread><tr><th align = "left">模型参数</th><th align = "left">参数含义</th></tr></thread><tbody><tr><td id = "NR小区标识-1"><a href = "NR小区标识-1.html">NR小区标识</a></td><td>该参数表示NR小区的标识，在本基站范围内唯一标识一个小区。</td></tr><tr><td id = "指定的5QI-2"><a href = "指定的5QI-2.html">指定的5QI</a></td><td>该参数表示5G QoS服务质量等级指示。
+
+</td></tr><tr><td id = "SSB频点的绝对频点号的值-3"><a href = "SSB频点的绝对频点号的值-3.html">SSB频点的绝对频点号的值</a></td><td>该参数表示指定5QI重定向到NR频点SSB的绝对频点号的值。</td></tr></tbody></table>
